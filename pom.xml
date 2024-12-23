@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>LoreAPI</name>
+    <groupId>me.athlaeos</groupId>
+    <artifactId>lapi-parent</artifactId>
+    <description>LoreAPI plugin with NMS</description>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <revision>1.0</revision>
+        <spigotVersion>1.20</spigotVersion>
+        <javaVersion>21</javaVersion>
+        <testServerPath>C:\Users\Athlaeos\Desktop\Minecraft Servers\1.21.4\plugins</testServerPath>
+        <shadedPackage>me.athlaeos.lapi.shaded</shadedPackage>
+
+        <!-- Do not change the following properties -->
+        <outputDirectory>target</outputDirectory>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <modules>
+        <module>lapi-core</module>
+        <module>lapi-dist</module>
+        <module>lapi-v1_21_R3</module>
+        <module>lapi-v1_21_R2</module>
+        <module>lapi-v1_21_R1</module>
+        <module>lapi-v1_20_R4</module>
+        <module>lapi-v1_20_R3</module>
+        <module>lapi-v1_20_R2</module>
+        <module>lapi-v1_20_R1</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <id>exportToServer</id>
+            <properties>
+                <outputDirectory>${testServerPath}</outputDirectory>
+            </properties>
+        </profile>
+    </profiles>
+
+    <build>
+        <defaultGoal>clean package</defaultGoal>
+        <finalName>LoreAPI_${revision}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${javaVersion}</source>
+                    <target>${javaVersion}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <repositories>
+        <repository>
+            <id>jeff-media-public</id>
+            <url>https://hub.jeff-media.com/nexus/repository/jeff-media-public/</url>
+        </repository>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>enginehub</id>
+            <url>https://maven.enginehub.org/repo/</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jeff-media</groupId>
+            <artifactId>custom-block-data</artifactId>
+            <version>2.2.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>7.3.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-bukkit</artifactId>
+            <version>7.1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-transport</artifactId>
+            <version>4.1.82.Final</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

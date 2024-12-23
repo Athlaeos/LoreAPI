@@ -1,0 +1,55 @@
+compression: false # If true, enchantments are compressed to allow for several enchantments per line
+compression_max_length: 40 # The max amount of text allowed per line if compression: true
+enchantment_separator: ", " # The separator symbol of enchantments if compression: true
+
+# %enchantments% may be used to display every enchantment the item has
+format:
+  - "#c:&#212121&m &#323232&m &#424242&m &#535353&m &#636363&m &#737373&m &#848484&m &#949494&m &#A5A5A5&m &#B5B5B5&m &#C5C5C5&m &#D6D6D6&m &#E6E6E6&m&#EFEFEF Enc&#F7F7F7han&#FFFFFFtme&#F6F6F6nts &#E5E5E5&m &#D4D4D4&m &#C3C3C3&m &#B2B2B2&m &#A1A1A1&m &#909090&m &#7F7F7F&m &#6E6E6E&m &#5D5D5D&m &#4C4C4C&m &#3B3B3B&m &#2A2A2A&m &#191919&m"
+  - "%enchantments%"
+  - ""
+
+hide_flag: true # If true, this placeholder will also add a HIDE_ENCHANTMENTS flag to the item, so the vanilla enchantments don't show up
+# The possible enchantments to add to the lore. Order of enchantment insertion is maintained
+enchantments:
+  "minecraft:sharpness": "&f<lang.enchantment_sharpness> %lv_roman%"
+  "minecraft:smite": "&f<lang.enchantment_smite> %lv_roman%"
+  "minecraft:power": "&f<lang.enchantment_power> %lv_roman%"
+  "minecraft:bane_of_arthropods": "&f<lang.enchantment_bane_of_arthropods> %lv_roman%"
+  "minecraft:breach": "&f<lang.enchantment_breach> %lv_roman%"
+  "minecraft:density": "&f<lang.enchantment_density> %lv_roman%"
+  "minecraft:wind_burst": "&f<lang.enchantment_wind_burst> %lv_roman%"
+  "minecraft:piercing": "&f<lang.enchantment_piercing> %lv_roman%"
+  "minecraft:impaling": "&f<lang.enchantment_impaling> %lv_roman%"
+  "minecraft:flame": "&f<lang.enchantment_flame>"
+  "minecraft:fire_aspect": "&f<lang.enchantment_fire_aspect> %lv_roman%"
+  "minecraft:channeling": "&f<lang.enchantment_channeling>"
+  "minecraft:knockback": "&f<lang.enchantment_knockback> %lv_roman%"
+  "minecraft:sweeping_edge": "&f<lang.enchantment_sweeping_edge> %lv_roman%"
+  "minecraft:punch": "&f<lang.enchantment_punch> %lv_roman%"
+  "minecraft:infinity": "&f<lang.enchantment_infinity>"
+  "minecraft:quick_charge": "&f<lang.enchantment_quick_charge> %lv_roman%"
+  "minecraft:multishot": "&f<lang.enchantment_multishot>"
+  "minecraft:looting": "&f<lang.enchantment_looting> %lv_roman%"
+  "minecraft:loyalty": "&f<lang.enchantment_loyalty> %lv_roman%"
+  "minecraft:riptide": "&f<lang.enchantment_riptide> %lv_roman%"
+  "minecraft:respiration": "&f<lang.enchantment_respiration> %lv_roman%"
+  "minecraft:aqua_affinity": "&f<lang.enchantment_aqua_affinity>"
+  "minecraft:thorns": "&f<lang.enchantment_thorns> %lv_roman%"
+  "minecraft:protection": "&f<lang.enchantment_protection> %lv_roman%"
+  "minecraft:fire_protection": "&f<lang.enchantment_fire_protection> %lv_roman%"
+  "minecraft:projectile_protection": "&f<lang.enchantment_projectile_protection> %lv_roman%"
+  "minecraft:blast_protection": "&f<lang.enchantment_blast_protection> %lv_roman%"
+  "minecraft:swift_sneak": "&f<lang.enchantment_swift_sneak> %lv_roman%"
+  "minecraft:depth_strider": "&f<lang.enchantment_depth_strider> %lv_roman%"
+  "minecraft:frost_walker": "&f<lang.enchantment_frost_walker> %lv_roman%"
+  "minecraft:soul_speed": "&f<lang.enchantment_soul_speed> %lv_roman%"
+  "minecraft:feather_falling": "&f<lang.enchantment_feather_falling> %lv_roman%"
+  "minecraft:luck_of_the_sea": "&f<lang.enchantment_luck_of_the_sea> %lv_roman%"
+  "minecraft:lure": "&f<lang.enchantment_lure> %lv_roman%"
+  "minecraft:efficiency": "&f<lang.enchantment_efficiency> %lv_roman%"
+  "minecraft:silk_touch": "&f<lang.enchantment_silk_touch>"
+  "minecraft:fortune": "&f<lang.enchantment_fortune> %lv_roman%"
+  "minecraft:mending": "&f<lang.enchantment_mending>"
+  "minecraft:unbreaking": "&f<lang.enchantment_unbreaking> %lv_roman%"
+  "minecraft:binding_curse": "&f<lang.enchantment_binding_curse>"
+  "minecraft:vanishing_curse": "&f<lang.enchantment_vanishing_curse>"

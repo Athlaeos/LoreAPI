@@ -1,0 +1,34 @@
+# All entries in this config are converted to usable placeholders
+# The format will be as such, assuming "item_armor_total" as key:
+# $lapi_item_armor_total$
+# AND
+# $lapi_list_item_armor_total$
+#
+# The difference between these two placeholders is that the first will simply inject a value
+# into the single line in the lore, even the attribute is not present on the item.
+# The benefit of this is that you may use several of these placeholders in one line, since they are
+# simple string placeholders. The downside is that it will be extra work maintaining formats
+# for items that may or may not have the relevant attribute, which would make it pointless to display.
+#
+# The second placeholder injects a line matching the format in place of its presence, if present.
+# The benefit of this is that this can be used to somewhat automatically add these placeholders
+# to items to display stats, or not display them if they don't have them.
+# The downside is that you can only use one per line.
+
+# All the defined placeholders will only be able to change with their own, and equipped item stats.
+# Things like potion effects or enchantments will not affect the displayed value
+
+hide_flag: true # If true, the item will have a HIDE_ATTRIBUTES flag added as well, so the vanilla flags don't show up
+
+attributes:
+  item_armor_total:
+    # The plugin attempts to parse all terms separated by pipes (|), since these terms may differ depending on minecraft version
+    attribute: "GENERIC_ARMOR|ARMOR"
+    # Decimal precision. 1 decimal results in a format like "0.0", 2 decimals in "0.00", 0 decimals in "0", etc.
+    decimal_precision: 1
+    # Valid placeholders are %stat_total% and %stat_bonus%, the latter not taking into account any additional stat modifier sources
+    format: "&fArmor %stat_total%"
+  item_armor_toughness_total:
+    attribute: "GENERIC_ARMOR_TOUGHNESS|ARMOR_TOUGHNESS"
+    decimal_precision: 1
+    format: "&fToughness %stat_total%"

@@ -1,0 +1,21 @@
+formats:
+  default:
+    display_name: "&f$lapi_item_name$"
+    lore:
+      - "&f$lapi_item_lore$"
+      - "&f$lapi_item_enchantments$"
+      - "&f$wrapper_item_stats$"
+  centered:
+    display_name: "#c:$lapi_item_name$"
+    lore:
+      - "#c:&f$lapi_item_lore$"
+  example:
+    display_name: "&cThis is a test"
+    lore:
+      - "&f$lapi_item_lore$"
+      - "&c$lapi_item_damage_total$ Damage"
+
+material_defaults:
+  # Allows you to apply a different default display format to a specific material
+  # Material must match that in the spigot Material enum (google "spigot material enum" and take top result)
+  BARRIER: default

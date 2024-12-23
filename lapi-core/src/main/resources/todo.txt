@@ -1,0 +1,116 @@
+AVAILABLE PLACEHOLDERS
+-------------------------------------------------------------------------
+
+ITEM STATS
+
+There are a couple hardcoded item stat properties, since they especially tend to vary based on
+other factors. Damage dealt, for example, can vary based on the item's enchantments (sharpness, smite, etc.)
+or potion effects (strength, weakness). Attack speed can vary with mining fatigue or haste, so that
+one has to get special functionality as well.
+All other item stat placeholders are data-driven, though. Defined in placeholder_configs/item_attributes.yml
+
+Hardcoded placeholders:
+$lapi_item_damage_total$
+Displays the current actual attack damage of the weapon, scales with enchantments and potion effects.
+Can be further customized in placeholder_configs/item_damage.yml
+
+$lapi_item_attack_speed_total$
+Displays the current actual attack speed of the weapon, scales with potion effects.
+Can be further customized in placeholder_configs/item_attack_speed.yml
+
+Default data-driven placeholders:
+$lapi_item_armor_total$
+$lapi_item_armor_toughness_total$
+$lapi_item_max_health$
+$lapi_item_movement_speed$
+$lapi_item_knockback_resistance$
+
+EACH of these placeholders can also be turned into list-format by using $lapi_list...$
+instead of just $lapi...$
+
+A list-placeholder allows several lines to be inserted in place of where the placeholder is
+present, or remove it entirely. For stats, this is the recommended default form of placeholder to use.
+This is because it also allows lines to not be present if the stat itself is also not present.
+That makes it easy for a format to be applicable on a lot of items, even if some items don't share
+the same stats.
+For example, a sword and chestplate can share the same format, but even though the format
+contains both attack damage and an armor value, the sword will only display an attack damage value
+and the chestplate will only display an armor value. If the stat isn't there, it's not displayed,
+and that's thanks to this list format.
+If its non-list counterpart was used, it would simply display 0 for that stat value.
+
+Example usage:
+$lapi_list_item_damage_total$
+$lapi_list_item_attack_speed_total$
+$lapi_list_item_armor_total$
+$lapi_list_item_armor_toughness_total$
+$lapi_list_item_max_health$
+$lapi_list_item_movement_speed$
+$lapi_list_item_knockback_resistance$
+
+Again, all can be customized in placeholder_configs/item_attributes.yml
+
+-------------------------------------------------------------------------
+
+ITEM PROPERTIES
+Some of an item's properties may be injected as placeholders too!
+
+Durability:
+$lapi_durability_percentile$   Displays the item's current durability, in a percentage format
+$lapi_durability_numeric$      Displays the item's current durability, in a durability/maxdurability format
+$lapi_durability_symbol$       Displays the item's current durability, with a unique symbol representative of the fraction of durability left on the item
+$lapi_durability_bar$          Displays the item's current durability, in a bar format
+(may also be converted to list format, similar to attributes, only displayed if the item can be damaged)
+May be further customized in placeholder_configs/item_durability.yml
+
+Name:
+$lapi_item_name$
+Injects an item's name, or a default translation defined in (language)_materials.json (default en-us_materials.json)
+
+Lore:
+$lapi_item_lore$
+Injects an item's lore. Is a list.
+May be further customized in placeholder_configs/item_lore.yml
+
+Enchantments:
+$lapi_item_enchantments$
+Injects an item's enchantments. Is a list. Format and enchantment display defined in
+placeholder_configs/item_enchantments.yml
+
+-------------------------------------------------------------------------
+
+FAKE DISPLAY PROPERTIES
+LoreAPI works with packets to make items appear different than they are, so why not get a little creative?
+We can make items appear to have properties they don't actually have, just in case you want to apply
+such properties on a more global scale without actually having to deal with editing these items
+yourself.
+
+Simply place these properties in your format, and they'll edit the item. These placeholders all
+act as list-injecting placeholders, but instead they replace themselves with nothing while
+changing the display of the item.
+
+$lapi_custom_model_data_<data>$
+Gives the item the given <data> as custom model data! <data> must be a number.
+$lapi_item_enchantment_glint$
+Makes the item shine even without enchantments! (1.20.4+)
+$lapi_item_model_<model>$
+Gives the item a custom model! <model> must be a namespaced key, such as minecraft:diamond_sword. (1.21.2+)
+$lapi_item_tooltip_style_<style>$
+Gives the item a different tooltip style! <style> must be a namespaced key. (1.21.2+)
+
+-------------------------------------------------------------------------
+
+WRAPPERS
+
+LoreAPI allows you to prepare your own preset placeholders, for ease of management.
+One for example is item_stats, which gets turned into the placeholder $wrapper_item_stats$
+This wrapper is filled with all item stats that normally occur on vanilla items, you might need to
+add more stats to this wrapper if your server setup has more attribute types available.
+
+Wrappers basically just cluster together lines and placeholders, allowing you to more consistently
+and easily insert elsewhere. With item stats for example, you'd only need to add $wrapper_item_stats$
+and suddenly your item is totally taken care of in terms of how stats are displayed!
+
+You can make your own wrappers in wrappers.yml
+
+$wrapper_item_stats$

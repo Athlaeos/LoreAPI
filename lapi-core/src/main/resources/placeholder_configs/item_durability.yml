@@ -1,0 +1,37 @@
+percentile_precision: 1
+percentile_format: "&f%color%Durability: %durability%%"
+precentile_colors:
+  "1": "&f"
+  "0.7": "&e"
+  "0.3": "&c"
+  "0.1": "&4"
+
+bar_format: "||||||||||||||||||||||||||||||||||||||||"
+bar_empty_color: "&8"
+bar_colors:
+  "1": "&a"
+  "0.7": "&e"
+  "0.3": "&c"
+  "0.1": "&4"
+
+numeric_format: "&f%color%%durability%&7/%max_durability%"
+numeric_colors:
+  "1": "&a"
+  "0.7": "&e"
+  "0.3": "&c"
+  "0.1": "&4"
+
+symbol_format: "&f%symbol%"
+symbols:
+  "1": "&aPristine"
+  "0.95": "&aFlawless"
+  "0.9": "&aDurable"
+  "0.8": "&aBlemished"
+  "0.7": "&eScratched"
+  "0.6": "&eDented"
+  "0.5": "&eWeakened"
+  "0.4": "&eDamaged"
+  "0.3": "&cCracked"
+  "0.2": "&cFragile"
+  "0.1": "&4Broken"
+

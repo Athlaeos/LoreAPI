@@ -1,0 +1,11 @@
+check_updates: true
+
+# Having every single item parsed may be intense for the server.
+# Enabling this option will cause items without item meta to be skipped, with exception to the given
+# item types
+skip_no_meta_items: true
+exceptions:
+  - BARRIER
+
+
+

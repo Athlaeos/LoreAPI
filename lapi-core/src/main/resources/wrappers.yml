@@ -1,0 +1,15 @@
+# Wrappers allows you to define list placeholders with other placeholders, for your convenience
+# and ease of management.
+
+# The resulting placeholder has the format of $wrapper_<placeholder>$, for example
+# If we assume item_stats is a defined wrapper, the placeholder for it will be $wrapper_item_stats$
+
+item_stats:
+  format:
+    - "$lapi_list_item_damage_total$"
+    - "$lapi_list_item_attack_speed_total$"
+    - "$lapi_list_item_armor_total$"
+    - "$lapi_list_item_knockback_resistance$"
+    - "$lapi_list_item_max_health$"
+    - "$lapi_list_item_movement_speed$"
+    - "$lapi_list_durability_numeric$"

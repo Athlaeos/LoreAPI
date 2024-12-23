@@ -1,0 +1,18 @@
+
+decimal_precision: 1
+
+# %damage_total% represents the total damage of the item specifically against undead
+# %damage_extra% represents the amount of extra damage dealt thanks to smite
+# For example, a diamond sword (base damage 7) with smite IV
+# %damage_total% would display 17
+# %damage_extra% would display 10
+smite: "&e%damage_total% "
+
+# Same, but for bane of arthropods instead
+bane_of_arthropods: "&d%damage_total% "
+
+impaling: "&9%damage_total% "
+
+damage: "&f%damage_total% "
+
+format: "&fAttack Damage: %damage%%smite%%bane_of_arthropods%%impaling%"

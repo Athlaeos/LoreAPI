@@ -1,0 +1,19 @@
+name: LoreAPI
+description: ${project.description}
+version: ${project.version}
+main: me.athlaeos.lapi.LoreAPIPlugin
+author: Athlaeos
+api-version: "1.20"
+load: POSTWORLD
+softdepend:
+- PlaceholderAPI
+
+commands:
+  loreapi:
+    aliases: [lapi]
+    description: "Base command to access LoreAPI's content"
+
+permissions:
+  loreapi.help:
+    default: true
+    description: "Access to /lapi help"

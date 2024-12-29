@@ -11,6 +11,7 @@ C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athla
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\utils\Action.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\commands\implementations\HelpCommand.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\format\DisplayFormat.java
+C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\EnchantmentGlintInjector.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\PlaceholderRegistry.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\commands\CommandManager.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\attribute\ItemDamagePlaceholder.java
@@ -19,11 +20,13 @@ C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athla
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\nms\NMS.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\gui\PlayerMenuUtility.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\hooks\PluginHook.java
+C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\ModelInjector.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\format\DisplayFormatRegistry.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\DurabilitySymbolPlaceholder.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\commands\implementations\FormatSetCommand.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\ListWrapper.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\DisplayNamePlaceholder.java
+C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\ToolTipInjector.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\StringPlaceholder.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\DurabilityBarPlaceholder.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\DurabilityListPlaceholder.java
@@ -56,6 +59,7 @@ C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athla
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\utils\Timer.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\localization\Translator.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\WrapperPlaceholder.java
+C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\CustomModelDataInjector.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\utils\EntityProperties.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\placeholder\placeholders\DurabilityNumericPlaceholder.java
 C:\Users\Athlaeos\Desktop\Java Projects\LoreAPI\lapi-core\src\main\java\me\athlaeos\lapi\Tester.java

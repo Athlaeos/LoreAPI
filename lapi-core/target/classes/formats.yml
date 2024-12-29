@@ -3,6 +3,7 @@ formats:
     display_name: "&f$lapi_item_name$"
     lore:
       - "&f$lapi_item_lore$"
+      - "&f$lapi_item_enchantments$"
       - "&f$wrapper_item_stats$"
   centered:
     display_name: "#c:$lapi_item_name$"

@@ -74,6 +74,7 @@ public class PlaceholderRegistry implements Reloadable {
         List<StaticPlaceholder> placeholders = getPlaceholders(string);
         for (StaticPlaceholder placeholder : placeholders){
             if (!(placeholder instanceof StringPlaceholder s)) continue;
+            if (LoreAPIPlugin.isHookFunctional(PAPIHook.class)) string = PAPIHook.parse(player, string);
             string = string.replace(String.format("$%s$", getPlaceholderName(s)), s.parse(player, item));
         }
 

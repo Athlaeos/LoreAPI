@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <name>LoreAPI</name>
+    <url>http://maven.apache.org</url>
     <groupId>me.athlaeos</groupId>
     <artifactId>lapi-parent</artifactId>
     <description>LoreAPI plugin with NMS</description>
@@ -23,16 +24,23 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>internal</id>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
+
     <modules>
         <module>lapi-core</module>
         <module>lapi-dist</module>
-        <module>lapi-v1_21_R3</module>
-        <module>lapi-v1_21_R2</module>
-        <module>lapi-v1_21_R1</module>
-        <module>lapi-v1_20_R4</module>
-        <module>lapi-v1_20_R3</module>
-        <module>lapi-v1_20_R2</module>
-        <module>lapi-v1_20_R1</module>
+        <module>lapi-v1_21_r3</module>
+        <module>lapi-v1_21_r2</module>
+        <module>lapi-v1_21_r1</module>
+        <module>lapi-v1_20_r4</module>
+        <module>lapi-v1_20_r3</module>
+        <module>lapi-v1_20_r2</module>
+        <module>lapi-v1_20_r1</module>
     </modules>
 
     <profiles>

@@ -14,6 +14,7 @@ me\athlaeos\lapi\commands\implementations\HelpCommand.class
 me\athlaeos\lapi\placeholder\placeholders\LorePlaceholder.class
 me\athlaeos\lapi\utils\Reloader.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\ItemDamagePlaceholder$3.class
+me\athlaeos\lapi\placeholder\placeholders\ModelInjector.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\ItemDamagePlaceholder.class
 me\athlaeos\lapi\gui\Menu.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\AttributeListPlaceholder.class
@@ -21,6 +22,7 @@ me\athlaeos\lapi\placeholder\placeholders\DurabilitySymbolPlaceholder.class
 me\athlaeos\lapi\utils\MathEval$OperatorHandler.class
 me\athlaeos\lapi\placeholder\ParameterizedPlaceholder.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\ItemDamagePlaceholder$4.class
+me\athlaeos\lapi\placeholder\placeholders\EnchantmentGlintInjector.class
 me\athlaeos\lapi\utils\Returns.class
 me\athlaeos\lapi\placeholder\placeholders\EnchantmentPlaceholder.class
 me\athlaeos\lapi\UpdateChecker.class
@@ -77,9 +79,11 @@ me\athlaeos\lapi\placeholder\placeholders\attribute\ItemAttackSpeedPlaceholder$1
 me\athlaeos\lapi\hooks\PAPIHook$1.class
 me\athlaeos\lapi\utils\DefaultItemProperties$AttributeModifierBuilder.class
 me\athlaeos\lapi\utils\MathEval$ArgParser.class
+me\athlaeos\lapi\placeholder\placeholders\CustomModelDataInjector.class
 me\athlaeos\lapi\utils\Reloadable.class
 me\athlaeos\lapi\utils\StringUtils.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\ItemDamagePlaceholder$1.class
+me\athlaeos\lapi\placeholder\placeholders\ToolTipInjector.class
 me\athlaeos\lapi\utils\MinecraftVersion.class
 me\athlaeos\lapi\listeners\HandSwitchListener.class
 me\athlaeos\lapi\placeholder\placeholders\attribute\ItemAttackSpeedPlaceholder$2.class

@@ -27,8 +27,20 @@ attributes:
     # Decimal precision. 1 decimal results in a format like "0.0", 2 decimals in "0.00", 0 decimals in "0", etc.
     decimal_precision: 1
     # Valid placeholders are %stat_total% and %stat_bonus%, the latter not taking into account any additional stat modifier sources
-    format: "&fArmor %stat_total%"
+    format: "&2Armor %stat_total%"
   item_armor_toughness_total:
     attribute: "GENERIC_ARMOR_TOUGHNESS|ARMOR_TOUGHNESS"
     decimal_precision: 1
-    format: "&fToughness %stat_total%"
+    format: "&2Toughness %stat_total%"
+  item_max_health:
+    attribute: "GENERIC_MAX_HEALTH|MAX_HEALTH"
+    decimal_precision: 1
+    format: "&2Max Health %stat_total%"
+  item_movement_speed:
+    attribute: "GENERIC_MOVEMENT_SPEED|MOVEMENT_SPEED"
+    decimal_precision: 1
+    format: "&2Movement Speed %stat_total%"
+  item_knockback_resistance:
+    attribute: "GENERIC_KNOCKBACK_RESISTANCE|KNOCKBACK_RESISTANCE"
+    decimal_precision: 1
+    format: "&2Knockback Resistance %stat_total%"

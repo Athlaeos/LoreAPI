@@ -11,6 +11,9 @@
         <version>${revision}</version>
     </parent>
 
+    <properties>
+    </properties>
+
     <build>
         <defaultGoal>clean package</defaultGoal>
         <directory>../target</directory>
@@ -85,37 +88,37 @@
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_21_R3</artifactId>
+            <artifactId>lapi-v1_21_r3</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_21_R2</artifactId>
+            <artifactId>lapi-v1_21_r2</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_21_R1</artifactId>
+            <artifactId>lapi-v1_21_r1</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_20_R4</artifactId>
+            <artifactId>lapi-v1_20_r4</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_20_R3</artifactId>
+            <artifactId>lapi-v1_20_r3</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_20_R2</artifactId>
+            <artifactId>lapi-v1_20_r2</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>me.athlaeos</groupId>
-            <artifactId>lapi-v1_20_R1</artifactId>
+            <artifactId>lapi-v1_20_r1</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>

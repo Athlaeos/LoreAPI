@@ -1,3 +1,13 @@
 /target/
 /.idea/
 /*.iml
+/lapi-core/target/
+/lapi-parent/target/
+/lapi-dist/target/
+/lapi-v1_20_r1/target/
+/lapi-v1_20_r2/target/
+/lapi-v1_20_r3/target/
+/lapi-v1_20_r4/target/
+/lapi-v1_21_r1/target/
+/lapi-v1_21_r2/target/
+/lapi-v1_21_r3/target/

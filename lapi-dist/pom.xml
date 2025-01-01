@@ -11,9 +11,6 @@
         <version>${revision}</version>
     </parent>
 
-    <properties>
-    </properties>
-
     <build>
         <defaultGoal>clean package</defaultGoal>
         <directory>../target</directory>
